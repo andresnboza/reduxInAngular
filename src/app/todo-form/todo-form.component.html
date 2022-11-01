@@ -1,0 +1,5 @@
+<form [formGroup]="form" (submit)="onSubmit($event)">
+  <label for="todo">Todo</label>
+  <input type="text" name="todo" formControlName="todo">
+  <button type="submit">Add todo</button>
+</form>

@@ -1,0 +1,5 @@
+<div>
+  <p [ngClass]="{'line': todo.completed}">{{ todo.todo }}</p>
+  <button (click)="delete($event, todo.id!)">Delete</button>
+  <button (click)="update($event, todo.id!, todo.completed)">{{ todo.completed ? "No Complete" : "Complete" }}</button>
+</div>
